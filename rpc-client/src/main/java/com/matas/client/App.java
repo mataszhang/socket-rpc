@@ -34,11 +34,13 @@ public class App {
 		return (T) Proxy.newProxyInstance(App.class.getClassLoader(), new Class[] { clazz }, new ProxyInvoker());
 	}
 
-	/**
-	 * 发起RPC调用
-	 * @author matas
-	 *
-	 */
+    /**
+     *
+     *
+     * @author matas
+     * @date 2018/1/11 0:26
+      *@email   mataszhang@163.com
+     */
 	static class ProxyInvoker implements InvocationHandler {
 		@Override
 		public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
